@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <script src="https://kit.fontawesome.com/8e4ae8d700.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/src/useredit.css">
+    <title>Edit profile</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top">
+          <a href="#" class="navbar-brand mx-5">
+            <img src="/assets/images/logo.png" height="34" alt="" loading="lazy" class="d-inline-block align-top text" />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav ml-auto mx-5">
+              <li class="nav-item mr-4">
+                <a href="http://localhost:5500/home.html#" class="nav-link hide">Home</a>
+              </li>
+              <li class="nav-item mr-4">
+                <a href="http://localhost:5500/home.html#service" class="nav-link hide">Service</a>
+              </li>
+              <li class="nav-item mr-4">
+                <a href="http://localhost:5500/home.html#customer" class="nav-link hide">Customer</a>
+              </li>
+              <li class="nav-item mr-4">
+                <a href="http://localhost:5500/home.html#rental" class="nav-link hide">Rental</a>
+              </li>
+              <li class="nav-item mr-4">
+                <a href="http://localhost:5500/home.html#news" class="nav-link hide">News</a>
+              </li>
+              <li class="nav-item mr-4">
+                <a href="http://localhost:5500/home.html#drivers" class="nav-link hide">Drivers</a>
+              </li>
+    
+              <li class="nav-item mr-4">
+                <a href="http://localhost:5500/home.html#about" class="nav-link hide">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img id="userimage" src="" width="40" height="40" class="rounded-circle">
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="http://localhost:5500/assets/pages/useredit.html">Edit Profile</a>
+                  <a class="dropdown-item" href="http://localhost:5500/index.html" onclick="logout()">Log Out</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <br>
+    <div class="container px-4 mt-5">
+        <!-- Account page navigation-->
+        <nav class="nav nav-borders mt-5">
+            <a class="nav-link active ms-0" href="#">Profile</a>
+        </nav>
+        <hr class="mt-0 mb-4">
+        <div class="row">
+            <div class="col-xl-4">
+                <!-- Profile picture card-->
+                <div class="card mb-4 mb-xl-0">
+                    <div class="card-header">Profile Picture</div>
+                    <div class="card-body text-center">
+                        <!-- Profile picture image-->
+                        <img class="img-account-profile rounded-circle mb-2"
+                            src="http://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+                        <!-- Profile picture help block-->
+                        <div class="small font-italic text-muted mb-4">JPG or PNG no larger than 5 MB</div>
+                        <!-- Profile picture upload button-->
+                        <input type="button" class="btn btn-success" onclick="upload.click()" value="Upload profile">
+                        <input type='file' hidden id="getFile">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-8">
+                <!-- Account details card-->
+                <div class="card mb-4">
+                    <div class="card-header">Account Details</div>
+                    <div class="card-body">
+                        <form>
+                            <!-- Form Group (username)-->
+                            <div class="mb-3">
+                                <label class="small mb-1" for="inputUsername">Username (how your name will appear to
+                                    other users on the site)</label>
+                                <input class="form-control" id="inputUsername" type="text"
+                                    placeholder="Enter your username" value="">
+                            </div>
+                            <!-- Form Row-->
+                            <div class="row gx-3 mb-3">
+                                <!-- Form Group (first name)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputFirstName">First name</label>
+                                    <input class="form-control" id="inputFirstName" type="text"
+                                        placeholder="Enter your first name" value="">
+                                </div>
+                                <!-- Form Group (last name)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputLastName">Last name</label>
+                                    <input class="form-control" id="inputLastName" type="text"
+                                        placeholder="Enter your last name" value="">
+                                </div>
+                            </div>
+                            <!-- Form Row        -->
+                            <div class="row gx-3 mb-3">
+                                <!-- Form Group (organization name)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputOrgName">Organization name</label>
+                                    <input class="form-control" id="inputOrgName" type="text"
+                                        placeholder="Enter your organization name" value="">
+                                </div>
+                                <!-- Form Group (location)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputLocation">Location</label>
+                                    <input class="form-control" id="inputLocation" type="text"
+                                        placeholder="Enter your location" value="">
+                                </div>
+                            </div>
+                            <!-- Form Group (email address)-->
+                            <div class="mb-3">
+                                <label class="small mb-1" for="inputEmailAddress">Email address</label>
+                                <input class="form-control" id="inputEmailAddress" type="email"
+                                    placeholder="Enter your email address" value="">
+                            </div>
+                            <!-- Form Row-->
+                            <div class="row gx-3 mb-3">
+                                <!-- Form Group (phone number)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputPhone">Phone number</label>
+                                    <input class="form-control" id="inputPhone" type="tel"
+                                        placeholder="Enter your phone number" value="">
+                                </div>
+                                <!-- Form Group (birthday)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputBirthday">Birthday</label>
+                                    <input class="form-control" id="inputBirthday" type="text" name="birthday"
+                                        placeholder="Enter your birthday" value="">
+                                </div>
+                            </div>
+                            <!-- Save changes button-->
+                            <div class="text-center">
+                                <button class="btn btn-primary" onclick="updateUser()" type="button">Save changes</button>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/src/useredit.js"></script>
+<script src="/src/main.js"></script>
+
+</html>

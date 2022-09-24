@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:url(/assets/images/back2.jpg) no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: bottom top;
+    font-family: sans-serif;
+}
+
+
+/* NAVBAR -- START */
+
+
+
+.navbar{
+    background-color: black;
+}
+
+.nav-link{
+    color:#FFD854 ;
+    font-size: 20px;
+    
+}
+.navbar-toggler{
+    color: #FFD854 !important;
+    font-size: 27px !important;
+}
+.nav-link:hover{
+    color: white;
+}
+
+
+
+/* NAVBAR --ENDS */
+
+
+.box{
+    background: lightgray;
+    color: red;
+    top: 50%;
+    left: 50% ;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    
+}
+.user{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    position: absolute;
+    top: -50px;
+    left: 100px;    
+}
+p{
+    color: red;
+    font-weight: bold;
+}
+input{
+    width: 100%;
+    margin-bottom: 18px !important;
+}
+input[type="text"],input[type="password"],input[type="email"]
+{
+    border:none;
+    font-size: 16px;
+    outline: none;
+    height: 30px;
+    color: black;
+    background: transparent;
+
+}
+.submit
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 240px;
+    background-color: brown;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.upload
+{
+    border: none;
+    outline:none;
+    height: 30px;
+    width: 150px;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    font-size: 17px;
+    transition: 0.5s;
+    padding-bottom: 4px;
+    margin-left: 44px;
+    margin-bottom: 30px;
+    text-align: center;
+      
+}
+.center{
+    text-align: center;
+}
+input[type="button"]:hover
+{
+    background-color: blue;
+    cursor: pointer;
+}
+a{
+    text-decoration: none !important;
+    font-size: 16px;
+    color: brown;
+}
+
+.admin{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+#errorbox{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+

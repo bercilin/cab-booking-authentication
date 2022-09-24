@@ -1,0 +1,351 @@
+body{
+    background-color:lightslategray;
+    
+}
+
+
+/* NAVBAR -- START */
+
+
+
+.navbar{
+    background-color: black;
+}
+
+.nav-link{
+    color:#FFD854 ;
+    font-size: 20px;
+    
+}
+.navbar-toggler{
+    color: #FFD854;
+    font-size: 27px;
+}
+.nav-link:hover{
+    color: white;
+}
+
+
+
+/* NAVBAR --ENDS */
+
+
+
+
+/* CSS - CAR ANIMATION  --  STARTS*/
+
+
+.main
+{
+    height: 100vh;;
+    width: 100%;
+    background-image: url(./../assets/images/sky.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+.main > h1{
+    position:absolute;
+    top: 20%;
+    left: 54%;
+    font-family:'Times New Roman', Times, serif;
+    font-size:40px;
+}
+.highway{
+
+    height: 200px;
+    width: 500%;
+    display:block;
+    background-image: url(./../assets/images/road.jpg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    animation: highway 3s linear infinite;
+}
+@keyframes highway{
+    100%{
+        transform:translate(-1900px);
+    }
+}
+.city{
+    height: 250px;
+    width: 500%;
+    background-image: url(./../assets/images/city.png);
+    position:absolute;
+    bottom:200px;
+    left: 0;
+    right:0;
+    display: block;
+    z-index:1;
+    background-repeat: repeat-x;
+    animation:city 20s linear infinite;
+}
+@keyframes city {
+    100%{
+        transform: translateX(-1400px);
+    }
+    
+}
+.car{
+    width: 400px;
+    left: 50%;
+    bottom: 100px;
+    transform: translate(-50%);
+    position: absolute;
+    z-index: 2;
+}
+.car img{
+    width: 100%;
+    animation: car 1s linear infinite;
+}
+@keyframes car {
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(-1px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+
+    
+}
+.wheel{
+    left: 50%;
+    bottom: 178px;
+    transform: translate(-50%);
+    position: absolute;
+    z-index: 2;
+}
+.wheel img{
+    width: 72px;
+    height: 72px;
+    animation: wheel 1s linear infinite;
+
+}
+.back-wheel{
+    left: -165px;
+    position: absolute;
+}
+.front-wheel{
+    left: 80px;
+    position: absolute;
+}
+@keyframes wheel {
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+
+/* CAR CSS ANIMATION -- END */
+
+
+
+
+/* OUR SERVICE -- START */
+
+
+
+.service-col{
+
+    background: #FFD854;
+    border-radius: 10px;
+    margin: 5px;
+    transition: .5s;
+    padding-bottom: 20px;
+}
+.service-col:hover{
+    transform:scale(1.05);
+}
+
+
+/* OUR SERVICE -- ENDS */
+
+
+
+/* CAPTION UNDERLINE  --  STARTS */
+
+
+.cont-caption{
+    color: #FFD854;
+
+}
+.border-sm{
+    width: 160px;
+    height: 3px;
+    background: #FFD854;
+    margin: 26px auto;
+}
+
+
+/* CAPTION UNDERLINE --  ENDS */
+
+
+
+
+
+/* TESTIMONIALS --  STARTS */
+
+
+
+.testimonial{
+    background: #FFD854;
+    color: black;
+    padding: 30px;
+    transition: 0.5s;
+    border-radius: 6px;
+    height: 450px;
+
+}
+.testimonial img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+}
+.name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+    text-align: center;
+}
+.stars{
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.text{
+    text-align: justify;
+
+}
+.testimonial:hover{
+    transform: translateY(20px);
+}
+
+
+
+/* TESTIMONIALS  --  ENS */
+
+
+
+
+
+/* RENTAL SERVICE -- STARTS */
+
+
+
+.rent {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    }
+    
+    
+.rent-content{
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    color: white;
+}
+
+
+/* RENTAL SERVICE -- ENDS */
+
+
+/* NEWS -- STARTS */
+
+
+.news-container{
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    
+}
+
+/* NEWS -- ENDS */
+
+
+
+/* OUR BEST DRIVERS -- START */
+
+
+
+
+.img-colo img{
+    max-width: 100%;
+    clip-path: circle();
+    margin: 10px;
+    
+}
+.gallery{
+    padding: 80px 0;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: transparent;
+  }
+  
+  .img-colo:hover .overlay {
+    opacity: 10;
+    
+  }
+  .driver-name {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    border-radius: 5px;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+
+/* OUR BEST RIVERS  --  ENDS */
+
+
+
+/* FOOTER -- STARTS */
+
+
+#about{
+    background-color: black;
+}
+
+
+/* FOOTER  --  ENDS */
+
+
+
+
+
+
+html{
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+
+
+
+

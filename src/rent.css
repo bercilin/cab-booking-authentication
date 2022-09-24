@@ -1,0 +1,81 @@
+body{
+  background-color:lightslategray !important;
+  
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR -- START */
+
+
+
+.navbar{
+  background-color: black;
+}
+
+.nav-link{
+  color:#FFD854 ;
+  font-size: 20px;
+  
+}
+.navbar-toggler{
+  color: #FFD854;
+  font-size: 27px !important;
+}
+.nav-link:hover{
+  color: white;
+}
+
+
+/* NAVBAR ENDS */
+
+
+
+/* Quantity and buttons are here */
+
+
+
+
+
+
+
+.price-quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.quantity{
+  font-size: 20px;
+}
+
+
+.card-body{
+  background-color: black;
+  color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.card-img-top{
+  width: 350px;
+  height: 300px;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+

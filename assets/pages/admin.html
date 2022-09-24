@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin login</title>
+    <link rel="stylesheet" href="/src/register.css">
+   
+    
+
+</head>
+
+<body>
+
+
+    <div id="loginmessage" class="box">
+        <img src="/assets/images/login.jpg" class="user" alt="user_image">
+        <form name="loginform">
+            <h4 class="admin">Welcome Admin</h4>
+            <p>User Name</p>
+            <input  type="text" id="loginname" name="uname" placeholder="Enter user name">
+            <p>Password</p>
+            <input type="password" id="loginpassword" name="upass" placeholder="Enter password">
+            <div id="errorbox"></div>
+            <input type="button" class="submit" onclick="adminlogin()" name="" value="Login">
+            
+
+
+            
+        </form>
+    </div>
+    <script src="/src/validation.js"></script>
+    
+    
+</body>
+
+</html>

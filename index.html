@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City-Taxi</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="src/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/8e4ae8d700.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("d1Q9FW1AZ1kORyRD8");
+      })();
+    </script>
+  </head>
+
+  <body>
+    <!-- Navigation bar-Start -->
+
+    <header>
+      <nav class="navbar navbar-expand-md fixed-top">
+        <a href="#" class="navbar-brand mx-5">
+          <img
+            src="./assets/images/logo.png"
+            height="34"
+            alt=""
+            loading="lazy"
+            class="d-inline-block align-top text"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#mynavbar"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav ml-auto mx-5">
+            <li class="nav-item mr-4">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item mr-4">
+              <a href="#service" class="nav-link">Service</a>
+            </li>
+            <li class="nav-item mr-4">
+              <a href="#customer" class="nav-link">Customer</a>
+            </li>
+            <li class="nav-item mr-4">
+              <a href="#rental" class="nav-link">Rental</a>
+            </li>
+            <li class="nav-item mr-4">
+              <a href="#news" class="nav-link">News</a>
+            </li>
+            <li class="nav-item mr-4">
+              <a href="#drivers" class="nav-link">Drivers</a>
+            </li>
+
+            <li class="nav-item mr-4">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Navigation bar-End -->
+
+    <!--CAR CSS ANIMATION - LOGIN - REGISTER - BOOK-->
+
+    <div class="main">
+      <div style="position: absolute; left: 60px; top: 200px">
+        <a
+          href="http://localhost:5500/assets/pages/login.html"
+          class="btn btn-dark"
+          role="button"
+          ><i class="fa-solid fa-house-lock mr-3"></i>Login</a
+        >
+      </div>
+      <div style="position: absolute; left: 170px; top: 200px">
+        <a
+          href="http://localhost:5500/assets/pages/register.html"
+          class="btn btn-dark"
+          role="button"
+          ><i class="fa-solid fa-id-card mr-3"></i>Register</a
+        >
+      </div>
+      
+      <div
+        class="h-100 d-flex justify-content-center align-items-center font-weight-bold"
+      >
+        <h2>Get your ride in minutes !</h2>
+      </div>
+      <div class="highway"></div>
+      <div class="city"></div>
+      <div class="car">
+        <img src="./assets/images/car.png" alt="" />
+      </div>
+      <div class="wheel">
+        <img src="./assets/images/wheel.png" class="back-wheel" alt="" />
+        <img src="./assets/images/wheel.png" class="front-wheel" alt="" />
+      </div>
+    </div>
+    <div class="mb-5"></div>
+
+    <!--CAR CSS ANIMATION - LOGIN - REGISTER - BOOK -- ENDS-->
+
+    <!-- SERVICE WE PROVIE -- STARTS -->
+
+    <div id="service"></div>
+
+    <div class="container-fluid service text-justify p-5">
+      <h1 class="cont-caption text-center font-weight-bold mt-5">
+        Service We Prodive
+      </h1>
+      <div class="border-sm mb-5"></div>
+
+      <div class="row">
+        <div class="col-sm service-col">
+          <p class="font-weight-bold mt-3">
+            <i class="fa-solid fa-user-group"></i> RESPONSIBLE
+          </p>
+          First and foremost, having a responsible taxi cab driver is arguably
+          the most important quality for any taxi driver to possess. As a
+          passenger, you want to have peace of mind that you're in safe hands
+          and that your driver is acting responsibly. This could mean anything
+          from obeying the rules of the road and traffic limits to practicing
+          car safety and maintaining a clean vehicle.
+        </div>
+        <div class="col-sm service-col">
+          <p class="font-weight-bold mt-3">
+            <i class="fa-solid fa-hand-dots"></i> LOCAL KNOWLEDGE
+          </p>
+          Next, it's crucial that your taxi cab driver possesses impeccable
+          local and current knowledge of the road.Is the main highway engulfed
+          in construction? Was there an accident that shut down the main road
+          leading to the airport? Whatever it might be, you're relying on your
+          taxi cab driver to find the best route to your destination possible.
+          This means saving both parties time and delivering you to your address
+          in as timely a manner as possible.
+        </div>
+        <div class="col-sm service-col">
+          <p class="font-weight-bold mt-3">
+            <i class="fa-solid fa-circle"></i> PATIENT
+          </p>
+          As with most jobs, taxi cab drivers are going to experience both good
+          passengers and bad passengers.In most cases, good passengers will
+          nearly always outweigh the bad passengers. However, it's only
+          realistic to assume that every cab driver is going to experience a
+          number of passengers that are stressed, frustrated, upset, late for an
+          early flight or inebriated.
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm service-col">
+          <p class="font-weight-bold mt-3">
+            <i class="fa-solid fa-car-side"></i> PUNCTUAL & HONNEST
+          </p>
+          It's imperative that every taxi cab driver operates a service that is
+          both honest and punctual.This means getting you to your destination on
+          time and avoiding potentially unnecessary routes. It's also crucial to
+          trust that your taxi driver is not taking advantage of you or
+          increasing their fees. This is especially the case if you're traveling
+          to a new destination and are unaware of the local customs.
+        </div>
+        <div class="col-sm service-col">
+          <p class="font-weight-bold mt-3">
+            <i class="fa-solid fa-cannabis"></i> CLEANLINESS
+          </p>
+          Stepping into a taxi cab, you should always expect the vehicle itself
+          to be clean, tidy and organized. This means no leftover garbage, clean
+          seating and an environment free from dust or debris.In a way, a taxi
+          cab driver's vehicle is almost like their office. That being said, a
+          clean and hygienic vehicle reveals a lot about one's sense of
+          professio. A clean cab is almost always going to result in a better
+          experience for the passenger.
+        </div>
+        <div class="col-sm service-col">
+          <p class="font-weight-bold mt-3">
+            <i class="fa-solid fa-handshake-simple"></i> PROBLEM SOLVER
+          </p>
+          As with nearly any profession, taxi cab drivers are going to
+          experience a number of unforeseen problems or distractions on the
+          job.The difference between a good taxi driver and a bad taxi driver is
+          the ability to solve these unforeseen issues quickly. This could be
+          anything from a problem with the vehicle itself to a getting stuck in
+          a major traffic jam. In order to satisfy the customer, the driver must
+          determine an efficient solution.
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICE WE PROVIDE --ENDS -->
+
+    <!-- TESTIMONIALS -- START -->
+
+    <div id="customer"></div>
+
+    <div class="container-fluid p-5">
+      <h1 class="cont-caption text-center font-weight-bold mt-5">
+        Testimonials
+      </h1>
+      <div class="border-sm mb-5"></div>
+      <div class="row">
+        <div class="col-m-12">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide d-none d-sm-block"
+            data-ride="carousel"
+          >
+            <ol class="carousel-indicators">
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li
+                data-target="#carouselExampleIndicators"
+                data-slide-to="1"
+              ></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-4 col-sm-12">
+                    <div class="testimonial">
+                      <img
+                        src="./assets/images/person1.png"
+                        class="mx-auto d-block"
+                        alt=""
+                      />
+                      <div class="name">OMAR BRADLEY</div>
+                      <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p class="text">
+                        The service of cab is very good.they charge cheaper
+                        service than others. they take 5 minutes to reach you
+                        and take less time to take your destination.this company
+                        provides luxury service.cars are in good conditions and
+                        well maintain.It is really good
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-12">
+                    <div class="testimonial">
+                      <img
+                        src="./assets/images/person2.png"
+                        class="mx-auto d-block"
+                        alt=""
+                      />
+                      <div class="name">ADMIRAL</div>
+                      <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <p class="text">
+                        Nice service safe driving but the problem is cars r not
+                        clean & good condition, I travel 3 times from Nashik to
+                        Mumbai vice-versa.drive was busy with mobile from Nashik
+                        to Mumbai . continue talking .while driving . A/c kept
+                        slow which was not getting the cooling .
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-12">
+                    <div class="testimonial">
+                      <img
+                        src="./assets/images/person3.png"
+                        class="mx-auto d-block"
+                        alt=""
+                      />
+                      <div class="name">CADENCE</div>
+                      <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <p class="text">
+                        I had a very bad experience with one way cab.I booked my
+                        cab on last Saturday from Arnala to Pune at 8 am.I must
+                        have called them thrice to confirm n they assured that
+                        cab will be there on time.but the driver didn't turn up
+                        nor attended my call.I was waiting there till 11 am.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-4 col-sm-12">
+                    <div class="testimonial">
+                      <img
+                        src="./assets/images/person4.jpg"
+                        class="mx-auto d-block"
+                        alt=""
+                      />
+                      <div class="name">RYAN</div>
+                      <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p class="text">
+                        I booked Oneway cab for my trip on April 4 from Patna
+                        Airport to Gaya via their online booking. The booking
+                        portal worked fine with OTP. The Car arrived at the
+                        airport on time.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-12">
+                    <div class="testimonial">
+                      <img
+                        src="./assets/images/person5.png"
+                        class="mx-auto d-block"
+                        alt=""
+                      />
+                      <div class="name">LEWIS</div>
+                      <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <p class="text">
+                        I had booked my first one Way Cab from Surat to Mumbai.
+                        The Service is extremely excellent and thorough
+                        professional. The Driver was too good and on time
+                        precise by the minute.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-12">
+                    <div class="testimonial">
+                      <img
+                        src="./assets/images/person6.jpg"
+                        class="mx-auto d-block"
+                        alt=""
+                      />
+                      <div class="name">JO</div>
+                      <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <p class="text">
+                        My driver got into an accident 3 mins into the ride.I
+                        was petrified from Bombay all the way to Surat. When we
+                        got to the destination he asked for 800 Rs more, for the
+                        "RETURN".
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              class="carousel-control-prev"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#carouselExampleIndicators"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="carouselExampleControlsSmallScreen"
+        class="carousel slide carousel-dark d-sm-none"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="testimonial">
+              <img
+                src="./assets/images/person1.png"
+                class="mx-auto d-block"
+                alt=""
+              />
+              <div class="name">OMAR BRADLEY</div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text">
+                The service of cab is very good.they charge cheaper service than
+                others. they take 5 minutes to reach you and take less time to
+                take your destination.this company provides luxury service.cars
+                are in good conditions and well maintain.It is really good
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial">
+              <img
+                src="./assets/images/person2.png"
+                class="mx-auto d-block"
+                alt=""
+              />
+              <div class="name">ADMIRAL</div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="text">
+                Nice service safe driving but the problem is cars r not clean &
+                good condition, I travel 3 times from Nashik to Mumbai
+                vice-versa.drive was busy with mobile from Nashik to Mumbai .
+                continue talking .while driving . A/c kept slow which was not
+                getting the cooling .
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial">
+              <img
+                src="./assets/images/person3.png"
+                class="mx-auto d-block"
+                alt=""
+              />
+              <div class="name">CADENCE</div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="text">
+                I had a very bad experience with one way cab.I booked my cab on
+                last Saturday from Arnala to Pune at 8 am.I must have called
+                them thrice to confirm n they assured that cab will be there on
+                time.but the driver didn't turn up nor attended my call.I was
+                waiting there till 11 am.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial">
+              <img
+                src="./assets/images/person4.jpg"
+                class="mx-auto d-block"
+                alt=""
+              />
+              <div class="name">RYAN</div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text">
+                I booked Oneway cab for my trip on April 4 from Patna Airport to
+                Gaya via their online booking. The booking portal worked fine
+                with OTP. The Car arrived at the airport on time.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial">
+              <img
+                src="./assets/images/person5.png"
+                class="mx-auto d-block"
+                alt=""
+              />
+              <div class="name">LEWIS</div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text">
+                I had booked my first one Way Cab from Surat to Mumbai. The
+                Service is extremely excellent and thorough professional. The
+                Driver was too good and on time precise by the minute.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial">
+              <img
+                src="./assets/images/person6.jpg"
+                class="mx-auto d-block"
+                alt=""
+              />
+              <div class="name">JO</div>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p class="text">
+                My driver got into an accident 3 mins into the ride.I was
+                petrified from Bombay all the way to Surat. When we got to the
+                destination he asked for 800 Rs more, for the "RETURN".
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControlsSmallScreen"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControlsSmallScreen"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- TESTIMONIALS--ENDS -->
+
+    <!-- RENTAL SERVICE -- START -->
+
+    <div id="rental"></div>
+
+    <div class="container-fluid p-5">
+      <h1 class="cont-caption text-center font-weight-bold mt-4">
+        Rental Service
+      </h1>
+      <div class="border-sm mb-5"></div>
+      <div class="row">
+        <div class="col-md-8">
+          <img class="rent" src="./assets/images/car-rental.jpg" alt="" />
+        </div>
+        <div class="col-md-4 rent-content">
+          <h1 class="mt-4 text-center">GLOBAL ONLINE CAR RENTAL SERVICE</h1>
+          <br />
+          <p class="text-justify p-3">
+            Book your perfect rental car at a low price anywhere in the world.
+            GLOBAL Rent-a-Car makes it possible: convenient, uncomplicated and
+            secure. Not just in Europe but also in Asia, for example in Vietnam,
+            Indonesia with Bali, Thailand, China or Japan, in North America,
+            Central America and South America, in Africa, Australia and New
+            Zealand - book a rental car and plan your journey even more flexibly
+            and independently of public transport. Regardless of whether it is a
+            far-off tourist destination or an entirely individual journey to the
+            furthest corners of the world.
+          </p>
+          <br />
+          <p class="text-justify p-3">
+            When you check-in online before you arrive, you get all the
+            necessary information you need. The key to your car is left in a
+            key-box. There is no need for any communication, listening to a
+            speech about upgrades or insurances.
+          </p>
+          <div class="text-center">
+            <a href="http://localhost:5500/assets/pages/login.html"
+              ><button type="button" class="btn btn-warning mt-3 mb-4">
+                <i class="fas fa-car mr-3"></i>RENT YOUR CAR
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RENTAL SERVICE -- ENDS -->
+
+    <!-- NEWS -- START -->
+
+    <div id="news"><br /><br /><br /></div>
+    <h1 class="cont-caption text-center font-weight-bold">News</h1>
+    <div class="border-sm"></div>
+    <div class="container-fluid p-5 news-container">
+      <div class="row">
+        <div class="col-md-3 p-5 btn-warning">
+          <p class="text-center">25 Jul, 2022, 10.21 AM IST</p>
+          <br />
+          <p class="text-justify">
+            New players in lane to challenge Ola, Uber duopoly Ride hailing in
+            the days before the pandemic, especially in cabs, was ruled by Ola
+            and Uber, but as the economy opened up, a bunch of companies.
+          </p>
+        </div>
+        <div class="col-md-3 p-5 btn-warning">
+          <p class="text-center">05 Jul, 2022, 07.22 PM IST</p>
+          <br />
+          <p class="text-justify">
+            Ola driver kills passenger after argument over OTP in Chennai
+            Chennai saw a horrific situation on Sunday when a simple argument
+            over OTP made an OLA driver kill a techie, and police arrested the
+            driver.
+          </p>
+        </div>
+        <div class="col-md-3 p-5 btn-warning">
+          <p class="text-center">15 Jun, 2022, 05.21 PM IST</p>
+          <br />
+          <p class="text-justify">
+            EV cab company BluSmart raises $25 million funding EV cab company
+            BluSmart raises $25 million funding BluSmart is one of the few
+            mobility companies in India that use electric cars in the
+            ride-hailing business.
+          </p>
+        </div>
+        <div class="col-md-3 p-5 btn-warning">
+          <p class="text-center">18 Aug, 2022, 06.21 AM IST</p>
+          <br />
+          <p class="text-justify">
+            Rising fuel costs, less sops forcing most cabbies out Commuters are,
+            in short, getting a raw deal, as a steep increase in the price of
+            CNG and slashing of incentives by the aggregators.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEWS -- ENDS -->
+
+    <!-- OUR BEST DRIVERS -- START -->
+
+    <div id="drivers"></div>
+
+    <section class="gallery">
+      <div class="container-md p-5">
+        <h1 class="cont-caption text-center font-weight-bold">
+          OUR BEST DRIVERS
+        </h1>
+        <div class="border-sm mb-5"></div>
+        <div class="row">
+          <div class="col-md-3 img-colo">
+            <img
+              src="https://media.istockphoto.com/photos/portrait-of-a-taxi-driver-picture-id104503527?k=20&m=104503527&s=612x612&w=0&h=xOzGQ-CCdBb7qPE2tvv4JoBv9KAiJVwnE2cHfNuTtTw="
+              class="gallery-item img-responsive img-circle img-fluid"
+              loading="lazy"
+              alt=""
+            />
+            <div class="overlay">
+              <div class="driver-name">Georgio</div>
+            </div>
+          </div>
+          <div class="col-md-3 img-colo">
+            <img
+              src="https://media.istockphoto.com/photos/taxi-driver-sitting-at-steering-wheel-picture-id152829823?k=20&m=152829823&s=612x612&w=0&h=vzngbDFXXsmeQgdgqGZZlxS48rHrMnoAqyR_0hO1dzI="
+              class="gallery-item img-responsive img-circle"
+              loading="lazy"
+              alt=""
+            />
+            <div class="overlay">
+              <div class="driver-name">Adam</div>
+            </div>
+          </div>
+          <div class="col-md-3 img-colo">
+            <img
+              src="https://media.istockphoto.com/photos/young-man-using-his-phone-while-driving-on-city-street-in-downtown-picture-id1414647969?k=20&m=1414647969&s=612x612&w=0&h=4TK5MLDktvmkWoacJQk1V-Syl8nF7x3fzEWBgIelLvA="
+              class="gallery-item img-responsive img-circle"
+              loading="lazy"
+              alt=""
+            />
+            <div class="overlay">
+              <div class="driver-name">Shodan</div>
+            </div>
+          </div>
+          <div class="col-md-3 img-colo">
+            <img
+              src="https://media.istockphoto.com/photos/portrait-of-driver-smiling-picture-id1216596937?k=20&m=1216596937&s=612x612&w=0&h=0IAbg6thztdlGEhBF9C9xSeXKSIUhkL_9K4cAtWVQNI="
+              class="gallery-item img-responsive img-circle"
+              loading="lazy"
+              alt=""
+            />
+            <div class="overlay">
+              <div class="driver-name">Klaus</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 img-colo">
+            <img
+              src="https://media.istockphoto.com/photos/crowdsourced-taxi-driver-in-england-picture-id978258506?k=20&m=978258506&s=612x612&w=0&h=uxUaj5lhgOqhP1KEHcMgh2HURTamdySvkbfIf3WKXSg="
+              class="gallery-item img-responsive img-circle"
+              loading="lazy"
+              alt=""
+            />
+            <div class="overlay">
+              <div class="driver-name">Elijah</div>
+            </div>
+          </div>
+          <div class="col-md-3 img-colo">
+            <img
+              src="https://media.istockphoto.com/photos/smiling-taxi-driver-sitting-in-car-with-open-door-and-holding-picture-id1191908997?k=20&m=1191908997&s=612x612&w=0&h=VEL5ZY9G-_nYpEAoHJtK0opg4PjauCeWne9jZtrXN8M="
+              class="gallery-item img-responsive img-circle"
+              loading="lazy"
+              alt=""
+            />
+            <div class="overlay">
+              <div class="driver-name">Macrel</div>
+            </div>
+          </div>
+          <div class="col-md-3 img-colo">
+            <img
+              src="https://media.istockphoto.com/photos/young-local-taxi-driver-in-kuala-lumpur-malaysia-picture-id956008910?k=20&m=956008910&s=612x612&w=0&h=Q_lGzWwglhOxtPJhhjwTWAzstl4M6HaXySJid5H2b1U="
+              class="gallery-item img-responsive img-circle"
+              loading="lazy"
+              alt=""
+            />
+            <div class="overlay">
+              <div class="driver-name">Barren</div>
+            </div>
+          </div>
+          <div class="col-md-3 img-colo">
+            <img
+              src="https://media.istockphoto.com/photos/portrait-of-african-man-inside-a-car-picture-id1218844586?k=20&m=1218844586&s=612x612&w=0&h=IhSriHyBCFFWzICKcKFMFjS4AfgQIPxsUEj3xuWG9co="
+              class="gallery-item img-responsive img-circle"
+              loading="lazy"
+              alt=""
+            />
+            <div class="overlay">
+              <div class="driver-name">Derik</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR BEST DRIVER -- ENDS -->
+
+    <!-- BOOK YOUR RIDE NOW -- START -->
+
+    <div class="container-fluid p-3 bg-warning">
+      <div class="row">
+        <div class="col mt-2">
+          <h5>Get your free ride now !</h5>
+        </div>
+
+        <div class="col">
+          <div class="text-right">
+            <a
+              href="http://localhost:5500/assets/pages/login.html"
+              class="btn btn-dark"
+              role="button"
+              ><i class="fas fa-car mr-3"></i>Book now!</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOOK YOUR RIDE NOW -- ENDS -->
+
+    <!-- FOOTER - START -->
+
+    <footer id="about" class="text-white pt-3 pb-4">
+      <div class="container-fluid text-center text-md-left">
+        <div class="row text-center text-md-left">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+              Address
+            </h5>
+
+            <address>
+              <i class="fas fa-location mr-1"></i> No. 1439,2nd Floor,5th Cross,
+              Manorayanapalya,R.T.Nagar Post, Bangalore-560032.
+            </address>
+            <h5 class="text-uppercase mb-3 font-weight-bold text-warning">
+              FOLLOW US
+            </h5>
+            <a
+              href="https://www.instagram.com/cabexperiences/?hl=en"
+              target="_blank"
+              ><i class="fa-brands fa-instagram fa-lg mr-1"></i
+            ></a>
+            <a href="https://www.meru.in/" target="_blank"
+              ><i class="fa-solid fa-globe fa-lg mr-1"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/pages/category/Taxi-Service/Airport-taxi-bangalore-2223549707874398/"
+              target="_blank"
+              ><i class="fa-brands fa-facebook fa-lg"></i
+            ></a>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+              Feedback
+            </h5>
+            <div class="form-outline">
+              <input
+                type="text"
+                id="name"
+                class="form-control mb-2"
+                placeholder="Name"
+                required
+              />
+              <input
+                type="text"
+                id="email_id"
+                class="form-control mb-2"
+                placeholder="Email"
+                required
+              />
+              <textarea
+                class="form-control"
+                id="message"
+                rows="5"
+                placeholder="Your feedback....."
+              ></textarea>
+              <div class="text-center">
+                <button onclick="sendMail()" type="button" class="btn btn-warning mt-3">
+                  <i class="fas fa-envelope mr-3"></i>Send
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+              Our Service
+            </h5>
+            <p>
+              <a
+                href="https://castle.qa/limousine/"
+                target="_blank"
+                class="text-white"
+                style="text-decoration: none"
+                >Limo</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://www.rapido.bike/"
+                target="_blank"
+                class="text-white"
+                style="text-decoration: none"
+                >Bike Taxi</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://www.medicaltransportservices.com/#"
+                target="_blank"
+                class="text-white"
+                style="text-decoration: none"
+                >Medical Transport</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://porter.in/rent-mini-trucks-in-bangalore/3-wheeler"
+                target="_blank"
+                class="text-white"
+                style="text-decoration: none"
+                >3-Wheeler Taxi</a
+              >
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+              Contact
+            </h5>
+            <p>
+              <a
+                href="https://www.google.com/maps/place/Royal+Driver's+%26+Cabs+Service/@13.0456421,77.5648978,17z/data=!3m1!4b1!4m5!3m4!1s0x3bae16245a70c975:0xc4dc18752cd170fe!8m2!3d13.0456421!4d77.5670865"
+                target="_blank"
+                class="text-white"
+                style="text-decoration: none"
+                ><i class="fas fa-home mr-3"></i>Banglore</a
+              >
+            </p>
+
+            <p>
+              <a
+                href="mailto: taxiservice@gmail.com"
+                class="text-white"
+                style="text-decoration: none"
+                ><i class="fas fa-envelope mr-3"></i>taxiservice@gmail.com</a
+              >
+            </p>
+            <p>
+              <a
+                href="tel: 7708715856"
+                class="text-white"
+                style="text-decoration: none"
+                ><i class="fas fa-phone mr-3"></i>+91 7708715856</a
+              >
+            </p>
+            <p>
+              <a
+                href="fax: 408.293.0301"
+                class="text-white"
+                style="text-decoration: none"
+                ><i class="fas fa-print mr-3"></i>408.293.0301</a
+              >
+            </p>
+          </div>
+        </div>
+        <hr class="mb-4" />
+        <div class="row align-items-center">
+          <div class="col-md-12 col-lg-12">
+            <p class="text-center">
+              Copyright &copy; 2022 All rights reserved by
+              <a href="#"><strong class="text-warning">city-taxi</strong></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- FOOTER - ENDS -->
+
+    <script src="./assets/js/jquery.min.js"></script>
+
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <script src="src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>book now</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/8e4ae8d700.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="/src/book.css" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+</head>
+
+<body>
+
+
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top">
+      <a href="#" class="navbar-brand mx-5">
+        <img src="/assets/images/logo.png" height="34" alt="" loading="lazy" class="d-inline-block align-top text" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav ml-auto mx-5">
+          <li class="nav-item mr-4">
+            <a href="http://localhost:5500/home.html#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item mr-4">
+            <a href="http://localhost:5500/home.html#service" class="nav-link">Service</a>
+          </li>
+          <li class="nav-item mr-4">
+            <a href="http://localhost:5500/home.html#customer" class="nav-link">Customer</a>
+          </li>
+          <li class="nav-item mr-4">
+            <a href="http://localhost:5500/home.html#rental" class="nav-link">Rental</a>
+          </li>
+          <li class="nav-item mr-4">
+            <a href="http://localhost:5500/home.html#news" class="nav-link">News</a>
+          </li>
+          <li class="nav-item mr-4">
+            <a href="http://localhost:5500/home.html#drivers" class="nav-link">Drivers</a>
+          </li>
+
+          <li class="nav-item mr-4">
+            <a href="http://localhost:5500/home.html#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img id="userimage" src="" width="40" height="40" class="rounded-circle">
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="http://localhost:5500/assets/pages/useredit.html">Edit Profile</a>
+              <a class="dropdown-item" href="http://localhost:5500/index.html" onclick="logout()">Log Out</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+    <div class="container p-5 text-center mt-5">
+
+        <h1 class="mt-1">BOOK YOUR CAB!</h1>
+        <h3 class="mt-3">BOOKING AND PAYMENT CAN DONE HERE</h3>
+        <h4 class=" mt-3">Pay via upi <i class="fa-solid fa-hand-point-right"></i> <span
+                class="text-danger">city-taxi@okaxis</span> </h4>
+        <form class="justify-content-center">
+            <div class="">
+                <label for="from" class="control-label"><i class="far fa-dot-circle fa-lg mt-3"></i></label>
+                <div class="col-md-5 mx-auto">
+                    <input type="text" id="from" placeholder="Set a pickup location" class="form-control">
+                </div>
+            </div>
+            <div class="">
+
+                <label for="to" class="control-label"><i class="fas fa-map-marker-alt fa-lg mt-3"></i></label>
+                <div class="col-md-5 mx-auto">
+                    <input type="text" id="to" placeholder="Enter Destination" class="form-control">
+                </div>
+
+            </div>
+
+        </form>
+
+        <div class="bttn  mt-3">
+            <button class="btn btn-warning" onclick=""><i class="fa-solid fa-magnifying-glass-location mr-3"></i>Find
+                cab</button>
+        </div>
+
+
+
+
+
+    </div>
+    <div class="container-fluid">
+        <div id="googleMap" class="my-2">
+
+        </div>
+        <div id="output">
+
+        </div>
+    </div>
+
+  
+
+
+
+</body>
+
+
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5loVyeiDQPRasxdD0qt0zcZ_EVZEeQlU&callback=initMap"></script>
+
+
+
+<script src="/src/map.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+
+
+</html>

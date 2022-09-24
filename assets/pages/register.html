@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register</title>
+    <script src="https://kit.fontawesome.com/8e4ae8d700.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/src/register.css">
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top">
+          <a href="#" class="navbar-brand mx-5">
+            <img src="/assets/images/logo.png" height="34" alt="" loading="lazy" class="d-inline-block align-top text" />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav ml-auto mx-5">
+              <li class="nav-item mr-4">
+                <a href="http://localhost:5500/index.html#" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item mr-4">
+                <a href="http://localhost:5500/index.html#service" class="nav-link">Service</a>
+              </li>
+              <li class="nav-item mr-4">
+                <a href="http://localhost:5500/index.html#customer" class="nav-link">Customer</a>
+              </li>
+              <li class="nav-item mr-4">
+                <a href="http://localhost:5500/index.html#rental" class="nav-link">Rental</a>
+              </li>
+              <li class="nav-item mr-4">
+                <a href="http://localhost:5500/index.html#news" class="nav-link">News</a>
+              </li>
+              <li class="nav-item mr-4">
+                <a href="http://localhost:5500/index.html#drivers" class="nav-link">Drivers</a>
+              </li>
+    
+              <li class="nav-item mr-4">
+                <a href="http://localhost:5500/index.html#about" class="nav-link">About</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+    <div id="registermessage" class="box">
+        
+        <img src="/assets/images/login.jpg" class="user" alt="user_image">
+        <form name="registerform">
+            <input type="button" class="upload" onclick="upload.click()" value ="Upload profile">
+            <input type='file' hidden id="getFile" >
+            <p>User Name</p>
+            <input id="username" type="text" name="uname1" placeholder="Enter user name">
+            <p>Mail ID</p>
+            <input id="email" type="email" name="mail" placeholder="Enter Mail ID">
+            <p>Password</p>
+            <input id="password" type="password" name="upass1" placeholder="Enter password">
+            <p>Re-Enter Password</p>
+            <input type="password" name="upass2" placeholder="Re-enter password">
+            <div id="errorbox"></div>
+            <input type="button" class="submit" onclick="fun1()" name="" value="Register">
+            <br><br>
+            <a href="login.html">Existing account ?</a>
+            
+            
+        </form>
+    </div>
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/src/validation.js"></script>
+    
+
+    <!-- 905188672100-2hmi2jab76gbtfrsgiunssk8e93abbgg.apps.googleusercontent.com -->
+    
+</body>
+
+</html>
