@@ -9,22 +9,7 @@ const apiUrl = "http://localhost:3000/user";
 const apiUrladmin = "http://localhost:3000/admin";
 const xhr = new XMLHttpRequest();
 
-if ((localStorage.getItem('user'))==null|| undefined) {
-  console.log("Dosent work");
-}else{
-  console.log("Working");
-  var logdetails = JSON.parse(localStorage.getItem('user'));
-  var images =logdetails[0].image
-  var idd =logdetails[0].id
-  console.log(images);
-  console.log(idd);
-  document.getElementById('userimage').src=images;
-}
 
-
-function logout() {
-  localStorage.clear();
-}
 
 function fun() {
   var uname = document.forms["loginform"]["uname"].value;
