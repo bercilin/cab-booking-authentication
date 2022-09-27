@@ -78,3 +78,16 @@ function image() {
 }
 
 image();
+
+
+
+
+
+var loadFile = function(event) {
+	var pic = document.getElementById('preview');
+	pic.src = URL.createObjectURL(event.target.files[0]);
+}
+
+
+
+
